@@ -1,0 +1,20 @@
+
+Declare str : string
+
+str = " "
+
+input str
+
+if 
+    len(str) > 2
+then
+    if
+        "ing" = right (str,3)
+    then
+        print str + "ly"
+    else 
+        print str + "ing"
+    end if
+else 
+    print str
+end if
