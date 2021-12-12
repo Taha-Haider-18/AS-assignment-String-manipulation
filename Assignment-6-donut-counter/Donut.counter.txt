@@ -1,0 +1,14 @@
+declare donut : integer
+
+donut = 0
+
+input donut
+
+if 
+    donut > 9
+then
+    print "Number of donuts: many"
+else 
+    print "Number of donuts: " + donut
+end if
+
