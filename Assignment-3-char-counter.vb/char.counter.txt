@@ -1,0 +1,26 @@
+declare str : string
+declare chr : character
+declare total : integer
+declare count : integer
+declare i : integer
+
+string = " "
+chr = ' '
+total = 0
+count = 0 
+i = 0
+
+input str
+input chr
+
+for i = 1 to len(str)
+
+        if
+            chr = mid(str,i,1)
+        then 
+            count = count + 1
+        end if
+next 
+
+print "Total characters in string: " + len(str)
+print "Number of '" + chr + "' in the string: " + count
