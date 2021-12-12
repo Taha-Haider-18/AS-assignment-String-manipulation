@@ -1,0 +1,30 @@
+declare str : string
+declare result : string
+declare chr : character
+declare i : integer
+
+str = " "
+result = " "
+chr = ' '
+i = 0
+
+input str
+chr = Left(str,1)
+
+for i 1 to len(str)
+    if 
+        i > 1
+    then
+        if 
+            chr = mid(str,i,1) 
+        then
+            result = result + "*"
+        else 
+            result = result + mid(str, i, 1)
+        end if
+    else 
+        result = chr
+    end if
+ next
+
+print result
