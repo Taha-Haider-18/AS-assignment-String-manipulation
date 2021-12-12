@@ -1,0 +1,44 @@
+declare str : string
+declare chr1 : char
+declare chr2 : char
+declare count : integer
+decalre i : integer
+decalre chr1count : integer
+decalre chr2count : integer
+
+str = " "
+chr1 = ' '
+chr2 = ' '
+count = 0
+i = 0
+
+input str
+str = Lower (str)
+chr1 = left(str, 1)
+
+for count = 1 to len (str)
+    chr1count= 0
+    chr2count = 0 
+    chr2 = mid (str, count, 1)
+    for i = 1 to len (str)
+
+        if
+            chr1 = mid(str, i, 1) 
+        then
+            chr1count = chr1count + 1 
+        end if
+
+        if
+            chr2 = mid(str, i, 1)
+        then
+            chr2count = chr2count + 1
+        end if
+
+    next 
+    if
+        chr2 >= chr1
+    then
+        chr1 = chr2 
+next 
+
+print "Character: " + chr1 + "Count" + chr1count
