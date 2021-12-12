@@ -1,0 +1,14 @@
+declare s : string
+
+s = " "
+
+input s
+
+if 
+    len(s) < 2 
+then
+    print s
+else 
+    print left (s,2) + right (s,2)
+end if
+
