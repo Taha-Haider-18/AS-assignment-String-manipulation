@@ -1,0 +1,16 @@
+declare a : string
+decalre b : string
+
+a = " "
+b = " "
+
+input a
+input b
+
+if 
+    len(a)<2 OR len(b)<2
+then
+    print "Please input two or more characters in both strings"
+else
+    print left(b,2) + mid(a,3,len(a)-2) + " " + left (a,2) + mid(b,3,len(b)-2)
+ end if
