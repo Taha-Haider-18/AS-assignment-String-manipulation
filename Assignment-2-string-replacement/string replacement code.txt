@@ -1,0 +1,92 @@
+declare str : string 
+declare final : string
+declare ch : character
+declare ch2 : character
+declare x : integer
+declare y : integer
+
+str = " "
+final = " "
+ch = ' '
+ch2 = ' '
+x = 0 
+y = 0
+
+input str
+input ch
+input ch2
+
+repeat
+    x = locate(str,ch)
+    y = locate(x,str,chr)
+
+    final=final+mid(str,x,y-x)+ch2
+    x=y
+until
+    x > 0
+
+print final
+
+......................................................................................
+
+Attempt 2 :
+
+
+
+declare str : string
+declare chr : character
+declare chr2 : character
+declare x : integer 
+
+str = " "
+chr = ' ' 
+chr2 = ' ' 
+x=1
+
+input string 
+input chr
+input chr2
+
+do
+	x=locat(str,chr)
+	str=left(str,x-1) + ch2 + mid(str,x+1,len(str)-x)
+until 
+	x=0
+
+................................................................................................................................................
+
+Third (Final) attempt :
+
+declare str : string
+declare result : string
+declare chr : character
+declare repl : character
+declare i : integer
+
+str = " "
+result = " "
+chr = ' '
+repl = ' '
+i = 0
+
+input str
+input chr
+input repl
+
+for i = 1 to len (str)
+    if
+        chr = mid (str,i,1)
+    then
+        result = result + repl 
+    else 
+        result = result + mid(str,i,1)
+    end if
+next
+
+print result
+ 
+
+
+
+
+
