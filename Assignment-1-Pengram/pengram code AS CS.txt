@@ -1,0 +1,30 @@
+declare str : string
+declare alph: string
+declare i : integer
+declare x : integer
+declare ascii : integer
+
+str = ""
+alph = ""
+i = 0 
+ascii = 96
+x=0
+
+input str
+str = lower(str)
+
+for i = 1 to 26
+    alph = chr(ascii + i)
+    x=locate (str,alph)
+    if   
+        x=0
+    then
+        break
+   else
+next
+if
+    x=0
+then
+    print "String is not a pengram"
+else
+print "String is a pengram."
