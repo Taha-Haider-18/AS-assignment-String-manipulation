@@ -1,0 +1,20 @@
+Declare str : string
+Declare x : integer
+Declare y : integer
+
+str = " "
+x = 0
+y = 0
+
+input str
+
+x = locate(str, "not")
+y = locate(str, "bad") + 2
+
+If
+    x > 0 And y > 2 And x < y 
+then
+    str = Left(str, x - 1) + "good" + Mid(str, y + 1, Len(str) - y)
+end If
+
+print str
